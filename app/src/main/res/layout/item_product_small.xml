@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:paddingBottom="12dp"
+    android:layout_margin="2dp"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+
+    <com.example.aplika.CoustomeView.NikeImageView
+        android:id="@+id/IvProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:viewAspectRatio="1.1"
+        app:roundedCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/TvProductTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        tools:text="TextView"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:minLines="2"
+        android:textAppearance="@style/TextAppearance.MyTheme.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/IvProduct"
+        app:layout_constraintTop_toBottomOf="@+id/IvProduct" />
+
+    <TextView
+        android:id="@+id/Tv_productPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="TextView"
+        android:layout_marginTop="4dp"
+        android:textColor="?android:textColorSecondary"
+        android:textAppearance="@style/TextAppearance.MyTheme.Body2"
+        app:layout_constraintStart_toStartOf="@+id/TvProductTitle"
+        app:layout_constraintTop_toBottomOf="@+id/TvProductTitle" />
+
+    <TextView
+        android:id="@+id/TvProductPriceCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MyTheme.Body1"
+        tools:text="TextView"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/Tv_productPrevious"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_productPrevious" />
+
+    <ImageView
+        android:id="@+id/IvProductFavorite"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/background_favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_favorites" />
+</androidx.constraintlayout.widget.ConstraintLayout>

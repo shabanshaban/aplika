@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/scroolview"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_nike_logo"
+                    />
+                <FrameLayout
+                    android:id="@+id/fr_search"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="46dp">
+                    <EditText
+                        android:id="@+id/ed_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="جستجو"
+
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textColor="?colorOnSurface"
+                        android:textSize="15sp"
+
+
+                        android:enabled="true"
+                        android:gravity="right|center_vertical"
+                        android:textColorHint="?android:textColorSecondary"
+                        android:paddingRight="54dp"
+                        android:background="@drawable/background_et_search"
+
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="38dp"
+                        android:layout_gravity="right|center_vertical"
+                        app:srcCompat="@drawable/ic_search"
+                        />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content">
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/bannerViewPagerSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"/>
+                    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                        android:id="@+id/dots_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        app:dotsColor="#e0dcdc"
+                        app:dotsCornerRadius="8dp"
+                        app:dotsSize="5dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        app:dotsSpacing="3dp"
+                        app:progressMode="false"
+                        app:dotsWidthFactor="4"
+                        app:selectedDotColor="@color/black"
+                        />
+
+                </FrameLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RvLatestProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+
+                    android:paddingRight="12dp"
+                    app:spanCount="2"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="12dp"
+
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

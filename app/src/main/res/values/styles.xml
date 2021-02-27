@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="myBottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+
+        <item name="itemIconTint">@color/bottom_navigation_item_color</item>
+        <item name="itemTextColor">@color/bottom_navigation_item_color</item>
+        <item name="itemRippleColor">@color/my_bottom_nav_ripple_color</item>
+        <item name="itemTextAppearanceActive">@style/ActiveItemNavigationSelectTextColor</item>
+        <item name="itemTextAppearanceInactive">@style/InActiveItemNavigationSelectTextColor</item>
+    </style>
+    <style name="ActiveItemNavigationSelectTextColor" parent="TextAppearance.AppCompat.Caption">
+
+        <item name="fontFamily">@font/danafanumultrabold</item>
+        <item name="android:fontFamily" >@font/danafanumultrabold</item>
+
+    </style>
+    <style name="InActiveItemNavigationSelectTextColor" parent="TextAppearance.AppCompat.Caption">
+
+    <item name="fontFamily">@font/danalight</item>
+    <item name="android:fontFamily" >@font/danalight</item>
+    </style>
+</resources>

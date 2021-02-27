@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aplika</string>
+    <string name="home">خانه</string>
+    <string name="cart">سبد خرید</string>
+    <string name="userDate">اطلاعات کاربری</string>
+    <string name="latest">جدید ترین</string>
+    <string name="addToCart">افزودن به سبد خرید</string>
+    <string name="viewAllComment">مشاهده همه نظرات</string>
+    <string name="commentUser">نظرات کاربران</string>
+    <string name="addComment">ثبت نظر</string>
+    <string name="textSample">این کتونی شدیدا برای دویدن مناسب هست و تقریبا هیچ فشار مخربی رونمیذارد به پا و زانوی شما وارد شود</string>
+
+</resources>
